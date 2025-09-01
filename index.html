@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poster Personalizer</title>
+    <title>Thripthi Taliparamba</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -317,7 +317,7 @@
         function drawText(ctx, text, centerX, y, maxWidth) {
             ctx.save();
             ctx.font = 'bold 48px Montserrat, sans-serif';
-            ctx.fillStyle = '#000066';
+            ctx.fillStyle = '#E0620B';
             ctx.strokeStyle = 'white';
             ctx.lineWidth = 3;
             ctx.textAlign = 'center';
@@ -361,10 +361,10 @@
             ctx.drawImage(templateImage, 0, 0, 1080, 1350);
             
             // Draw circular clipped user image with adjustment parameters
-            drawClippedImage(ctx, userImage, 697, 368, 220, 220, imageOffsetX, imageOffsetY, imageZoom);
+            drawClippedImage(ctx, userImage, 649, 320, 320, 320, imageOffsetX, imageOffsetY, imageZoom);
             
             // Draw name text centered at y=860
-            drawText(ctx, name, 810, 640, 450);
+            drawText(ctx, name, 810, 680, 450);
             
             // Show canvas
             canvas.style.display = 'block';
@@ -417,4 +417,5 @@
         });
     </script>
 </body>
+
 </html>
